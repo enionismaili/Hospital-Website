@@ -1,7 +1,5 @@
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    word-spacing: 10px;
-    font-size: 20px;
 }
 .navbar {
     text-align: center;
@@ -9,12 +7,23 @@ body {
     margin: 100px 500px 100px;
     padding: 30px;
     border-radius: 20px;
+    word-spacing: 10px;
+    font-size: 20px;
+    color: white;
 }
-a {
-    padding: 5px;
-    border: 1px solid #000; 
-    border-radius: 5px; 
+.links {
+    padding: 10px;
+    border: 1px solid #ffbf00; 
+    border-radius: 8px; 
     text-decoration: none; 
     color: inherit; 
     transition: background-color 0.3s ease; 
+}
+
+.symptomsSection {
+    border: 1px inset grey;
+    border-radius: 8px;
+    padding: 10px;
+    padding-right: 30px;
+    margin: 30px;
 }
