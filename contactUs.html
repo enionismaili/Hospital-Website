@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact-Us</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
+
+    <section class="header">
+        <nav>
+            <a  href="Index.html"> <img class="logo" src="images/EliteCareLogo.png" alt=""> </a>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="staff.html">Staff of Doctors</a></li>
+                    <li><a href="symptoms.html">Symptoms of illnesses</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+
+<section class="location-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19691.23255923132!2d4.883139002849963!3d52.368652577392595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c174cc38ed%3A0xa9bdbf3f1ac855f9!2sGrachtengordel%2C%20Amsterdam%2C%20Netherlands!5e0!3m2!1sen!2s!4v1711882272722!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+            <span>
+                <h5>123 Health St, Wellness City, HC 45678</h5>
+                <p>Amsterdam, Netherlands</p>
+            </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+            <span>
+                <h5>(123) 456-7890</h5>
+                <p>Monday to sunday  7:00AM to 12:00PM</p>
+            </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+            <span>
+                <h5>contact@elitecare.com</h5>
+                <p>Email US</p>
+            </span>
+            </div>
+        </div>
+
+        <div class="contact-col">
+
+            <form action="">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="text" placeholder="Enter your Email Addres" required>
+                <label for="docotr">Choose the doctor</label>
+                <select name="doctor" id="doctor">
+                    <option value="">Patrick Soon Shiong</option>
+                    <option value="">Dr. Patrick Soon Shiong</option>
+                    <option value="">Dr. William A. Abdu, M.D, M.S</option>
+                    <option value="">Dr. Myles. B. Abbott, M.D.</option>
+                    <option value="">Dr. Fouad. M. Abbas, M.D.</option>
+                    <option value="">Dr. Khalid Abbed, M.D.</option>
+                    <option value="">Dr. Naresh Trehan</option>
+                    <option value="">Dr. Arthur Reese Albright, M.D.</option>
+                    <option value="">Dr. Corrie T.M Anderson, M.D.</option>
+                    <option value="">Dr. Mark. F. Aaron, M.D.</option>
+                </select>
+                <textarea rows="8" placeholder="Message" required></textarea>
+                <button type="submit" id="appointmentBtn" class="appointment-btn red-btn">Set Appointment</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="hospital-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>EliteCare Clinic</h3>
+            <p>123 Health St, Wellness City, HC 45678</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: contact@elitecare.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="staff.html">Our Doctors</a></li>
+                <li><a href="symptoms.html">Symptoms of illnesses</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Accessibility</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>Stay connected through our social networks:</p>
+            <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 EliteCare. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="contactus.js"></script>
 </body>
 </html>
