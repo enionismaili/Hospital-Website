@@ -54,25 +54,19 @@
 
 
 
-    <div class="form-container">
-        <form id="signup-form">
-            <h2>Sign Up</h2>
-            <p>Sign up to be informed about any news about health and to stay closer to us</p>
-            <div class="input-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+    <div class="chatbot-container">
+        <button id="toggle-chat" onclick="toggleChat()">↓</button>
+        <div id="chat-container" style="display:none;">
+            <div id="chatbox">
+                <p class="botText"><span>Hello! How can I help you?</span></p>
             </div>
-            <div class="input-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask something...">
+                <button onclick="getResponse()">Send</button>
             </div>
-            <div class="input-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Signup</button>
-        </form>
+        </div>
     </div>
+
 
     <footer class="hospital-footer">
         <div class="footer-content">
