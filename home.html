@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="home.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 
 </head>
 
 <body>
     <section class="header">
         <nav>
-            <a  href="Index.html"> <img class="logo" src="images/EliteCareLogo.png" alt=""> </a>
+            <a href="Index.html"> <img class="logo" src="images/EliteCareLogo.png" alt=""> </a>
             <div class="nav_links">
                 <ul>
                     <li><a href="home.html">Home</a></li>
@@ -35,34 +36,41 @@
 
     <div class="articles-container">
         <div class="article">
-            <img src="https://phonemantra.com/wp-content/uploads/2023/08/acute-illness.jpg" alt="Symptoms of illness"
-                class="article-image">
-            <h3 class="article-title">Symptoms of illnesses</h3>
-            <p class="article-description">Don't you feel good, check if you have any of these symptoms and find what
-                are you suffering from? <a href="symptoms.html">Learn for symptoms</a></p>
+            <div id="article1">
+                <img src="https://phonemantra.com/wp-content/uploads/2023/08/acute-illness.jpg"
+                    alt="Symptoms of illness" class="article-image">
+                <h3 class="article-title">Symptoms of illnesses</h3>
+                <p class="article-description">Don't you feel good, check if you have any of these symptoms and find
+                    what
+                    are you suffering from? <a href="symptoms.html">Learn for symptoms</a></p>
+            </div>
         </div>
 
 
         <div class="article">
-            <img src="https://wp.globaluniversitysystems.com/mua/wp-content/uploads/sites/10/2023/02/istock-482499394.webp"
-                alt="Symptoms of illness" class="article-image">
-            <h3 class="article-title">Our Doctors</h3>
-            <p class="article-description">Do you want to get in touch with our staff?<br><a href="symptoms.html">Find
-                    your doctor</a></p>
+            <div id="article2">
+                <img src="https://wp.globaluniversitysystems.com/mua/wp-content/uploads/sites/10/2023/02/istock-482499394.webp"
+                    alt="Symptoms of illness" class="article-image">
+                <h3 class="article-title">Our Doctors</h3>
+                <p class="article-description">Do you want to get in touch with our staff?<br><a href="staff.html">Find
+                        your doctor</a></p>
+            </div>
         </div>
     </div>
 
 
 
     <div class="chatbot-container">
-        <button id="toggle-chat" onclick="toggleChat()">↓</button>
+        <button id="toggle-chat"><i class="far fa-comment"></i></button>
+
         <div id="chat-container" style="display:none;">
             <div id="chatbox">
                 <p class="botText"><span>Hello! How can I help you?</span></p>
             </div>
             <div class="chat-input">
                 <input type="text" id="userInput" placeholder="Ask something...">
-                <button onclick="getResponse()">Send</button>
+                <button id="send-button">Send</button>
+
             </div>
         </div>
     </div>
