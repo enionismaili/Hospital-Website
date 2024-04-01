@@ -3,9 +3,11 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
+
 .logo {
-    width: 108px; 
-    height: 108px; 
+    width: 155px; 
+    height: 155px; 
 }
 
 .header {
@@ -27,7 +29,7 @@ nav {
 
 nav img {
     width: auto; 
-    max-height: 100px; 
+    max-height: 150px; 
     border-radius: 6%;
 }
 
@@ -39,21 +41,21 @@ nav img {
 .nav_links ul {
     margin: 0; 
     padding: 0; 
-    display: flex; /* Change display to flex */
-    justify-content: flex-end; /* Align items to the end of the flex container */
-    list-style-type: none; /* Remove default list item markers */
+    display: flex; 
+    justify-content: flex-end; 
+    list-style-type: none; 
 }
 
 .nav_links ul li {
     padding: 8px 12px;
     position: relative;
-    margin-right: 10px; /* Add margin-right for spacing between links */
+    margin-right: 10px;
 }
 
 .nav_links ul a {
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 19px;
 }
 
 .nav_links ul li::after {
@@ -70,59 +72,53 @@ nav img {
     width: 100%;
 }
 
-.text-box {
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
 .text-box h1 {
-    font-size: 48px; /* Adjust as needed */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
-.links a{
-    color: aliceblue;
-    padding: 40px;
-    text-decoration: none; 
-}
-
-
-
-.articles-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
-
-.article {
-    flex-basis: calc(33.333% - 20px); /* Subtract margin between articles */
-    margin: 10px; /* Spacing between articles */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-    border-radius: 8px; /* Rounded corners for the container */
-    overflow: hidden; /* Ensures the image does not break out of border-radius */
-    cursor: pointer;
+    margin: 20px 0; 
+    padding: 0 20px; 
+    text-align: center;
+    color: #fff;
 }
 
 .article-image {
-    width: 100%;
-    display: flex; /* Remove any extra space below the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    display: flex;
+    text-align: center;
+    border-radius: 25px;
 }
 
-.article-title {
-    margin: 8px 16px; /* Uniform spacing for the title */
-    color: #4B68B8; /* Use the project's navy blue for titles */
+
+.article {
+    padding-left: 600px;
+    margin-top: 80px;
+    cursor: pointer;  
 }
 
-.article-description {
-    padding: 0 16px 16px; /* Padding inside the article for the text */
-    font-size: 0.9em; /* Adjust font size to fit the design */
+#article2{
+    width: fit-content;
+}
+.article-description{
+    width: 600px;
+    
+}
+
+.article-description a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4B68B8;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+   margin-bottom: 60px;
+}
+
+.article-description a:hover {
+    background-color: #365899; 
+    transform: translateY(-2px); /* Move up slightly on hover */
 }
 
 /* Responsive adjustments */
@@ -132,11 +128,13 @@ nav img {
     }
 
     .article {
-        flex-basis: auto; /* Each article takes full width on smaller screens */
-        margin-bottom: 20px; /* Add some space between stacked articles */
+        flex-basis: auto; 
+        margin-bottom: 20px; 
     }
 }
-
+.article-title{
+    margin-top: 30px;
+}
 
 
 #greeting {
@@ -156,6 +154,65 @@ nav img {
     display: inline-block;
     
 }
+
+
+#our-services {
+    background-image: url('images/servicesinHomepage.png');
+    background-color: #4B68B8;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 600px;
+}
+
+.services-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+#our-services h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    padding: 30px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item i {
+    font-size: 40px;
+    color: #745EE7;
+    margin-bottom: 20px;
+}
+
+.service-item h3, .service-item p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 .hospital-footer {
@@ -195,22 +252,13 @@ nav img {
 }
 
 .social-icons a {
-    font-size: 20px;
-    margin-right: 10px;
-    color: #ffffff; /* Icon color */
-    transition: all 0.3s ease; /* Smooth transition for color and background */
-    border-radius: 50%; /* Makes the background shape circular */
-    width: 40px; /* Sets a specific width for the icons */
-    height: 40px; /* Sets a specific height for the icons */
-    display: inline-flex; /* Allows the use of flex properties for centering */
-    align-items: center; /* Centers the icon vertically */
-    justify-content: center; /* Centers the icon horizontally */
+    border: 1px solid #ffffff; 
+    background-color: transparent; 
 }
 
 .social-icons a:hover {
-    background-color: #007bff; /* Adds a blue background on hover */
-    color: #ffffff; /* Keeps the icon color white */
-    text-decoration: none; /* Removes any text underline */
+    background-color: #ffffff; 
+    color: #4B68B8; 
 }
 
 
