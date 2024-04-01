@@ -5,11 +5,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #F0F2F5; 
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px; 
+}
+
 header {
     min-height: 60vh;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/back.png);
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(to bottom right, #005AA7, #FFFDE4), url(images/back.png) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -17,143 +25,185 @@ nav {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 .nav_links ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .nav_links ul li {
-    padding: 8px 12px;
+    margin-left: 20px;
 }
 
 .nav_links ul a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav_links ul a:hover, .nav_links ul a.active {
-    color: #4B68B8;
+    color: #FFD700; 
+    font-weight: 600;
+}
+
+.text-box h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
 }
 
 main {
     padding: 40px 20px;
-    background-color: #f8f9fa;
+    background-color: #F0F2F5;
 }
 
 section {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-between; 
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-section:nth-of-type(odd) .section-content {
-    order: 2;
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Larger shadow for hover effect */
 }
 
-.section-content, .section-img {
-    flex: 1;
-    padding: 0 20px;
+/* Styling for odd sections */
+section:nth-of-type(odd) {
+    background-color: #005AA7; /* Blue background for odd sections */
+    color: #ffffff; /* White text for better contrast */
 }
 
+/* Styling for even sections */
+section:nth-of-type(even) {
+    background-color: #ffffff; /* White background for even sections */
+    color: #333; /* Dark text for better contrast */
+}
+
+/* Text section styling, without specific background color */
+.section-content {
+    flex-basis: 45%; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+    /* Do not set a background color here since it's handled by the section */
+}
+
+/* Image section styling */
+.section-img {
+    flex-basis: 45%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Image styling */
 .section-img img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+    width: auto; 
+    max-height: 300px; 
     border-radius: 8px;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
-    section {
-        flex-direction: column;
-    }
-
     .section-content, .section-img {
-        padding: 0;
-        text-align: center;
+        flex-basis: 100%; 
     }
 
     .section-img img {
-        max-width: 100%;
+        max-width: 80%; 
+        max-height: unset; 
     }
 }
 
 
-
 .hospital-footer {
-    background-color: #2a2a2a;
+    background-color: #005AA7;
     color: #ffffff;
-    padding: 20px 0;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 20px;
 }
 
 .footer-section {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
-.footer-section h3 {
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s;
+.footer-section h3, .footer-section ul li a {
+    color: #FFD700;
+    transition: color 0.2s ease-in-out;
 }
 
 .footer-section ul li a:hover {
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .social-icons a {
-    font-size: 20px;
-    margin-right: 10px;
-    color: #ffffff; /* Icon color */
-    transition: all 0.3s ease; /* Smooth transition for color and background */
-    border-radius: 50%; /* Makes the background shape circular */
-    width: 40px; /* Sets a specific width for the icons */
-    height: 40px; /* Sets a specific height for the icons */
-    display: inline-flex; /* Allows the use of flex properties for centering */
-    align-items: center; /* Centers the icon vertically */
-    justify-content: center; /* Centers the icon horizontally */
+    margin: 0 10px;
+    background-color: #FFD700;
+    color: #005AA7;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .social-icons a:hover {
-    background-color: #007bff; /* Adds a blue background on hover */
-    color: #ffffff; /* Keeps the icon color white */
-    text-decoration: none; /* Removes any text underline */
+    color: #ffffff;
+    background-color: #333;
 }
 
-
-
 .footer-bottom {
-    text-align: center;
+    font-size: 14px;
     margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
+.values-list {
+    list-style: none; /* Removes default list styling */
+    padding-left: 0; /* Removes default padding */
+    max-width: 600px; /* Adjust the width as needed */
+    margin: auto; /* Centers the list */
 }
+
+.values-list li {
+    margin-bottom: 10px; /* Adds space between list items */
+    align-items: center; /* Aligns items vertically */
+    display: flex; /* Allows for flexbox properties */
+}
+
+.values-list .icon {
+    margin-right: 10px; /* Adds space between the icon and text */
+    flex-shrink: 0; /* Prevents the icon from shrinking */
+}
+
+.values-list svg {
+    fill: #333; /* Sets the color of the SVG icon */
+    width: 24px; /* Sets the width of the icon */
+    height: 24px; /* Sets the height of the icon */
+}
+
+.values-list p {
+    margin: 0; /* Removes default margin from paragraph if used */
+    font-weight: 400; /* Sets the font weight of the text */
+}
+
+/* Add custom styles for individual icons based on their class */
+.values-list .compassion-icon svg { fill: #E63946; }
+.values-list .excellence-icon svg { fill: #F4A261; }
+.values-list .integrity-icon svg { fill: #2A9D8F; }
+.values-list .collaboration-icon svg { fill: #264653; }
+.values-list .innovation-icon svg { fill: #2B2D42; }
+
