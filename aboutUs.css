@@ -128,82 +128,72 @@ section:nth-of-type(even) {
 
 
 .hospital-footer {
-    background-color: #005AA7;
+    background-color: #2a2a2a;
     color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
+    padding: 20px 0;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    padding: 0 20px;
 }
 
 .footer-section {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
-.footer-section h3, .footer-section ul li a {
-    color: #FFD700;
-    transition: color 0.2s ease-in-out;
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #ffffff;
+    color: #cccccc;
 }
 
 .social-icons a {
-    margin: 0 10px;
-    background-color: #FFD700;
-    color: #005AA7;
-    padding: 10px;
-    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ffffff; /* Icon color */
+    transition: all 0.3s ease; /* Smooth transition for color and background */
+    border-radius: 50%; /* Makes the background shape circular */
+    width: 40px; /* Sets a specific width for the icons */
+    height: 40px; /* Sets a specific height for the icons */
+    display: inline-flex; /* Allows the use of flex properties for centering */
+    align-items: center; /* Centers the icon vertically */
+    justify-content: center; /* Centers the icon horizontally */
 }
 
 .social-icons a:hover {
-    color: #ffffff;
-    background-color: #333;
+    background-color: #007bff; /* Adds a blue background on hover */
+    color: #ffffff; /* Keeps the icon color white */
+    text-decoration: none; /* Removes any text underline */
 }
 
+
+
 .footer-bottom {
-    font-size: 14px;
+    text-align: center;
     margin-top: 20px;
 }
 
-.values-list {
-    list-style: none; /* Removes default list styling */
-    padding-left: 0; /* Removes default padding */
-    max-width: 600px; /* Adjust the width as needed */
-    margin: auto; /* Centers the list */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.values-list li {
-    margin-bottom: 10px; /* Adds space between list items */
-    align-items: center; /* Aligns items vertically */
-    display: flex; /* Allows for flexbox properties */
-}
-
-.values-list .icon {
-    margin-right: 10px; /* Adds space between the icon and text */
-    flex-shrink: 0; /* Prevents the icon from shrinking */
-}
-
-.values-list svg {
-    fill: #333; /* Sets the color of the SVG icon */
-    width: 24px; /* Sets the width of the icon */
-    height: 24px; /* Sets the height of the icon */
-}
-
-.values-list p {
-    margin: 0; /* Removes default margin from paragraph if used */
-    font-weight: 400; /* Sets the font weight of the text */
-}
-
-/* Add custom styles for individual icons based on their class */
-.values-list .compassion-icon svg { fill: #E63946; }
-.values-list .excellence-icon svg { fill: #F4A261; }
-.values-list .integrity-icon svg { fill: #2A9D8F; }
-.values-list .collaboration-icon svg { fill: #264653; }
-.values-list .innovation-icon svg { fill: #2B2D42; }
 
