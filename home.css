@@ -252,13 +252,22 @@ nav img {
 }
 
 .social-icons a {
-    border: 1px solid #ffffff; 
-    background-color: transparent; 
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ffffff; /* Icon color */
+    transition: all 0.3s ease; /* Smooth transition for color and background */
+    border-radius: 50%; /* Makes the background shape circular */
+    width: 40px; /* Sets a specific width for the icons */
+    height: 40px; /* Sets a specific height for the icons */
+    display: inline-flex; /* Allows the use of flex properties for centering */
+    align-items: center; /* Centers the icon vertically */
+    justify-content: center; /* Centers the icon horizontally */
 }
 
 .social-icons a:hover {
-    background-color: #ffffff; 
-    color: #4B68B8; 
+    background-color: #007bff; /* Adds a blue background on hover */
+    color: #ffffff; /* Keeps the icon color white */
+    text-decoration: none; /* Removes any text underline */
 }
 
 
