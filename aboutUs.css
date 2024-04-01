@@ -7,11 +7,9 @@
 
 header {
     min-height: 60vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),  url(images/hospitalbackroundphoto);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/back.png);
     background-size: cover;
     background-position: center;
-    position: relative;
 }
 
 nav {
@@ -19,12 +17,6 @@ nav {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-}
-
-nav img {
-    width: auto;
-    max-height: 100px;
-    border-radius: 6%;
 }
 
 .nav_links ul {
@@ -35,11 +27,6 @@ nav img {
 
 .nav_links ul li {
     padding: 8px 12px;
-    position: relative;
-}
-
-.nav_links ul li:not(:last-child) {
-    margin-right: 10px;
 }
 
 .nav_links ul a {
@@ -53,52 +40,53 @@ nav img {
     color: #4B68B8;
 }
 
-.text-box {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
 }
 
 section {
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
 }
 
-h2 {
-    color: #005f73;
-    margin-bottom: 10px;
+section:nth-of-type(odd) .section-content {
+    order: 2;
 }
 
-p, li {
-    line-height: 1.6;
+.section-content, .section-img {
+    flex: 1;
+    padding: 0 20px;
 }
 
-@media screen and (max-width: 768px) {
-    .nav_links ul {
+.section-img img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    section {
         flex-direction: column;
-        background-color: rgba(4, 9, 30, 0.9);
-        position: absolute;
-        right: 0;
-        top: 100%;
-        width: 100%;
-        display: none;
     }
 
-    .nav_links ul.active {
-        display: flex;
-    }
-
-    .nav_links ul li {
-        margin-right: 0;
+    .section-content, .section-img {
+        padding: 0;
         text-align: center;
     }
+
+    .section-img img {
+        max-width: 100%;
+    }
 }
+
 
 
 .hospital-footer {
