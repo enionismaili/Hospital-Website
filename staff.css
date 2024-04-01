@@ -28,6 +28,8 @@
     font-size: 13px;
     background: transparent;
     position: relative;
+    transition: transform 0.5s ease; /* Add transition for smooth effect */
+    transform-origin: center; /* Set the transform origin to the center */
 }
 .hero-btn:hover{
     border: 1px solid #ffbf00;
@@ -37,7 +39,7 @@
     transition:  all .5s ease;
 }
 
-.staff-hero-btn {
+.staff-hero-btn{
     display: inline-block;
     text-decoration: none;
     color: #4B68B8;
@@ -47,18 +49,15 @@
     background: transparent;
     position: relative;
     border-radius: 6px;
-    transition: transform 0.5s ease; 
-    transform-origin: center; 
 }
-
-.staff-hero-btn:hover {
+.staff-hero-btn:hover{
     border: 1px solid #ffbf00;
     color: #ffbf00;
+
+    font-size: 15px;
     background: white;
-    transform: scale(1.1); 
+    transition:  all .5s ease;
 }
-
-
 
 
 nav {
