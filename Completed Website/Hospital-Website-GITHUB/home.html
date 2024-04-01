@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="Index.html"> <img class="logo" src="images/EliteCareLogo.png" alt=""> </a>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="staff.html">Staff of Doctors</a></li>
+                    <li><a href="symptoms.html">Symptoms of illnesses</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Home</h1>
+        </div>
+    </section>
+
+    <div id="greeting"></div>
+
+    <div class="articles-container">
+        <div class="article">
+            <div id="article1">
+                <img src="https://phonemantra.com/wp-content/uploads/2023/08/acute-illness.jpg"
+                    alt="Symptoms of illness" class="article-image">
+                <h3 class="article-title">Symptoms of illnesses</h3>
+                <p class="article-description">Don't you feel good, check if you have any of these symptoms and find what are you suffering from? <br>
+                <a href="symptoms.html">Learn for symptoms</a></p>
+            </div>
+        </div>
+
+
+        <div class="article">
+            <div id="article2">
+                <img src="https://wp.globaluniversitysystems.com/mua/wp-content/uploads/sites/10/2023/02/istock-482499394.webp"
+                    alt="Symptoms of illness" class="article-image">
+                <h3 class="article-title">Our Doctors</h3>
+                <p class="article-description">Do you want to get in touch with our staff?<br>
+                <a href="staff.html">Find your doctor</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="our-services">
+        <div class="services-container">
+            <h2>Our Premium Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Emergency Care</h3>
+                    <p>Immediate response and care for acute conditions and injuries.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-baby"></i>
+                    <h3>Pediatrics</h3>
+                    <p>Specialized care for infants, children, and teens in a friendly environment.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Cardiology</h3>
+                    <p>Advanced heart care with modern diagnostic and treatment options.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-user-md"></i>
+                    <h3>General Surgery</h3>
+                    <p>Comprehensive surgical treatments using the latest technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="chatbot-container">
+        <button id="toggle-chat"><i class="far fa-comment"></i></button>
+
+        <div id="chat-container" style="display:none;">
+            <div id="chatbox">
+                <p class="botText"><span>Hello! How can I help you?</span></p>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask something...">
+                <button id="send-button">Send</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+
+    <footer class="hospital-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EliteCare Clinic</h3>
+                <p>123 Health St, Wellness City, HC 45678</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@elitecare.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="staff.html">Our Doctors</a></li>
+                    <li><a href="symptoms.html">Symptoms of illnesses</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Stay connected through our social networks:</p>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EliteCare. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="home.js"></script>
+
+</body>
+
+</html>
