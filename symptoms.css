@@ -2,22 +2,33 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
 }
+
+/* To set the width and height of the logo */
 .logo {
     width: 108px; 
     height: 108px; 
 }
 
+/* To set the minimum height and width of the header, 
+and to set the background image and position */
 .header {
     min-height: 60vh; 
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/hospitalbackroundphoto);
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/back.png);
+    background-size: cover 200px;
+    background-position: center center;
     background-repeat: no-repeat;
     position: relative;
 }
 
+/* To set the display and padding of the nav, 
+and to align the items horizontally and vertically */
 nav {
     display: flex;
     padding: 2% 6%;
@@ -25,17 +36,21 @@ nav {
     align-items: center;
 }
 
+/* To set the width, max-height, and border-radius of the nav img */
 nav img {
     width: auto; 
     max-height: 100px; 
     border-radius: 6%;
 }
 
+/* To set the flex property of the nav_links,
+and to set the text-align to right */
 .nav_links {
     flex: 1;
     text-align: right;
 }
 
+/* To set the margin, padding, display, and list-style-type of the nav_links ul */
 .nav_links ul {
     margin: 0; 
     padding: 0; 
@@ -44,18 +59,24 @@ nav img {
     list-style-type: none; /* Remove default list item markers */
 }
 
+/* To add padding and position to the nav_links ul li,
+and to set the margin-right for spacing between links */
 .nav_links ul li {
     padding: 8px 12px;
     position: relative;
     margin-right: 10px; /* Add margin-right for spacing between links */
 }
 
+/* To set the color, text-decoration, and font-size of the nav_links ul a */
 .nav_links ul a {
     color: #fff;
     text-decoration: none;
     font-size: 13px;
 }
 
+
+/* To set the width, height, background, and transition of the nav_links ul li::after,
+and to set the margin to auto */
 .nav_links ul li::after {
     content: '';
     width: 0%;
@@ -82,8 +103,197 @@ nav img {
 
 .text-box h1 {
     font-size: 48px; /* Adjust as needed */
-    margin: 0; /* Remove default margin */
+    margin-bottom: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
 
+/* To set the padding of the container */
+.container{
+    padding: 25px 8%;
+    padding-bottom: 100px;
+}
 
+/* To set the text-align, padding-bottom, color, text-shadow, and font-size of the container.heading */
+.container .heading {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #4B68B8;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+/* To set the display, grid-template-columns, grid-template-rows, and gap of the container.box-container */
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(270px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* To set the box-shadow, border-radius, background-color, padding, text-align, and position of the container.box-container.box */
+.container .box-container .box {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5%;
+    background-color: #fff;
+    padding: 55px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* To set the size and position of the container.box-container.box img */
+.container .box-container .box img{
+    size: auto;
+    position: center;
+}
+
+
+/* To set the color, font-size, and padding of the container.box-container.box h3 */
+.container .box-container .box h3{
+    color: #4B68B8;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+/* To set the color, font-size, and line-height of the container.box-container.box p */
+.container .box-container .box p{
+    color: black;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* To set the display, text-decoration, color, border, padding, font-size, background, position, text-align, position, and transform of the container.box-container.box.btn */
+.container .box-container .box .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #4B68B8;
+    border: 1px solid #4B68B8;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    /* position: relative; */
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* To set the width, height, and object-fit of the.box img */
+.box img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* To set the background-color, padding, border-radius, box-shadow, and position of the.form-container */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* To set the margin-bottom of the.input-group */
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* To set the width, padding, margin-top, border, border-radius, and font-size of the input[type="text"], input[type="email"], input[type="password"] */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* To set the width, padding, background-color, color, border, border-radius, cursor, and position of the button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* To set the background-color, color, padding, and position of the button:hover */
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* To set the background-color, color, padding, and position of the.hospital-footer */
+.hospital-footer {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+/* To set the display, justify-content, flex-wrap, and padding of the.footer-content */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* To set the margin of the.footer-section */
+.footer-section {
+    margin: 10px 0;
+}
+
+/* To set the margin-bottom of the.footer-section h3 */
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+/* To set the list-style, padding, and color of the.footer-section ul */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* To set the color, text-decoration, transition, and margin of the.footer-section ul li a */
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* To set the color of the.footer-section ul li a:hover */
+.footer-section ul li a:hover {
+    color: #cccccc;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ffffff; /* Icon color */
+    transition: all 0.3s ease; /* Smooth transition for color and background */
+    border-radius: 50%; /* Makes the background shape circular */
+    width: 40px; /* Sets a specific width for the icons */
+    height: 40px; /* Sets a specific height for the icons */
+    display: inline-flex; /* Allows the use of flex properties for centering */
+    align-items: center; /* Centers the icon vertically */
+    justify-content: center; /* Centers the icon horizontally */
+}
+
+.social-icons a:hover {
+    background-color: #007bff; /* Adds a blue background on hover */
+    color: #ffffff; /* Keeps the icon color white */
+    text-decoration: none; /* Removes any text underline */
+}
+
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
