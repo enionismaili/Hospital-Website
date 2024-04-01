@@ -70,7 +70,7 @@ section {
     margin-bottom: 40px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 25px;
 }
 
 section:hover {
@@ -111,7 +111,7 @@ section:nth-of-type(even) {
 .section-img img {
     width: auto; 
     max-height: 300px; 
-    border-radius: 8px;
+    border-radius: 25px;
 }
 
 /* Mobile responsiveness */
